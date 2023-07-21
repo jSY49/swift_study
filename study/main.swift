@@ -10,5 +10,6 @@ import Foundation
 //부스트코스 ios프로그래밍을 위한 스위프트기초
 
 //study_1()  //스위프트 기초
-study_1_2()  //
+//study_1_2()  //
+study_facam_1()
     

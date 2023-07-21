@@ -41,8 +41,6 @@ func study_1_2_ex1(){
     //nill
 //    someAny = nill        //어떤 데이터 값도 들어올 수 있지만 nill은 안됨
 //    someObject = nill     //어떤 클래스 타입이 들어올 수 있지만 nill은 안됨
-    
-    
 }
 
 
@@ -116,7 +114,7 @@ func study_1_2_ex2(){
     var integerSet: Set<Int> = Set<Int>()
     // insert : 새로운 멤버 입력
     integerSet.insert(1)
-    integerSet.insert(99)
+    integerSet.insert(99) 
     integerSet.insert(99)    // 동일한 값은 여러번 insert해도 한번만 저장
     integerSet.insert(100)
 
@@ -132,6 +130,7 @@ func study_1_2_ex2(){
 
     // count: 멤버 개수
     print("integerSet.count = \(integerSet.count)")
+    print(integerSet)
 
     // 2. Set의 활용
     // 멤버의 유일성이 보장되기 때문에 집합 연산에 활용하면 유용
