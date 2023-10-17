@@ -11,5 +11,6 @@ import Foundation
 
 //study_1()  //스위프트 기초
 //study_1_2()  //
-study_facam_1()
+//study_facam_1()
+study_4()
     
