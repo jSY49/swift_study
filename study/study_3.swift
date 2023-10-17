@@ -60,10 +60,13 @@ private func _enum(){
      - String 의 경우, case 이름을 따르거나, 새로 지정할수 있음
      */
     enum MasterLevel: Int {
-        case beginner
-        case intermediate
-        case professional
+        case beginner   //0
+        case intermediate   //1
+        case professional   //2
     }
+    
+    var beginner : MasterLevel = .beginner
+    print(beginner.rawValue)    //결과 : 0
 
     let pro = MasterLevel(rawValue: 2)
     let otherLevel = MasterLevel(rawValue: 5) // -> nil
@@ -71,15 +74,19 @@ private func _enum(){
     print("pro :\(pro)")
     print("otherLevel :\(otherLevel)")
     
+    
+    
     enum Direction: String {
-        case up
+        case up //값이 없으면 이름 자체를 rawValue로 사용
         case down = "ddd"
     }
 
     let up = Direction(rawValue: "up")
+    let down = Direction(rawValue: "ddd")
     let otherDirection = Direction(rawValue: "left") // -> nil
     
-    print("up :\(up)")
-    print("down :\(otherDirection)")
+    print("up :\(up?.rawValue)")
+    print("down :\(down?.rawValue)")
+    print("down :\(otherDirection?.rawValue)")
     
 }
